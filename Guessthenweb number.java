@@ -85,7 +85,9 @@ public class GuessNumberWebServer {
                 </script>
                 </body>
                 </html>
-            """;
+            """
+                    
+                    """;;
             exchange.getResponseHeaders().add("Content-Type", "text/html");
             exchange.sendResponseHeaders(200, html.length());
             OutputStream os = exchange.getResponseBody();
